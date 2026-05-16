@@ -1,17 +1,18 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import NavBar from "./layout/NavBar";
-import Footer from "./layout/Footer";
+import PageNotFound from "./pages/PageNotFound";
+import Container from "./pages/Container";
 const App = () => {
   return (
     <>
-      <NavBar/>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<Home />} />
-        <Route path="/projects" element={<Home />} />
+        <Route path="/"  element={<Container/>}>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<Home />} />
+          <Route path="/projects" element={<Home />} />
+        </Route>
+        <Route path="*"  element={<PageNotFound/>}/>
       </Routes>
-      <Footer/>
     </>
   );
 };

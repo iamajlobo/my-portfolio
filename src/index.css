@@ -2,23 +2,14 @@
 
 :root {
   /* === BASE === */
-  --color-bg-main: #0F172A;        /* Deep navy (main background) */
+  --color-bg-main: #0a0c10;        /* Deep navy (main background) */
   --color-bg-secondary: #111827;   /* Section background */
   --color-surface: #1F2937;        /* Cards / containers */
-
-  /* === TEXT === */
-  --color-text-primary: #E5E7EB;   /* Main text */
-  --color-text-secondary: #9CA3AF; /* Muted text */
-  --color-text-dim: #6B7280;       /* Subtle labels */
 
   /* === BRAND / ACCENT === */
   --color-accent: #22D3EE;         /* Cyan (main brand) */
   --color-accent-hover: #06B6D4;   /* Hover state */
   --color-accent-glow: rgba(34, 211, 238, 0.35);
-
-  /* === BORDERS / LINES === */
-  --color-border: #1F2937;
-  --color-border-light: #374151;
 }
 
 .bg-main {
