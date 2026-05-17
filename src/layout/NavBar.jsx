@@ -119,7 +119,7 @@ const NavBar = () => {
                     <NavLink
                         onClick={() => setIsOpen(false)}
                         className={linkClass}
-                        to="/project"
+                        to="/projects"
                     >
                         Projects
                     </NavLink>

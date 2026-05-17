@@ -92,7 +92,7 @@ const Footer = () => {
                         </a>
 
                         <a
-                            href="/project"
+                            href="/projects"
                             className="
                                 hover:text-violet-400
                                 transition-colors
