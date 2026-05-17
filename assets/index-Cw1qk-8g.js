@@ -227,7 +227,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                     p-6\r
                     flex flex-col gap-6\r
                     text-center\r
-                `,children:[(0,j.jsx)(Nn,{onClick:()=>t(!1),className:n,to:`/`,children:`Home`}),(0,j.jsx)(Nn,{onClick:()=>t(!1),className:n,to:`/about`,children:`About`}),(0,j.jsx)(Nn,{onClick:()=>t(!1),className:n,to:`/project`,children:`Projects`}),(0,j.jsx)(Nn,{className:`\r
+                `,children:[(0,j.jsx)(Nn,{onClick:()=>t(!1),className:n,to:`/`,children:`Home`}),(0,j.jsx)(Nn,{onClick:()=>t(!1),className:n,to:`/about`,children:`About`}),(0,j.jsx)(Nn,{onClick:()=>t(!1),className:n,to:`/projects`,children:`Projects`}),(0,j.jsx)(Nn,{className:`\r
                             bg-violet-600\r
                             hover:bg-violet-500\r
                             text-white\r
@@ -268,7 +268,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                             `,children:`Home`}),(0,j.jsx)(`a`,{href:`/about`,className:`\r
                                 hover:text-violet-400\r
                                 transition-colors\r
-                            `,children:`About`}),(0,j.jsx)(`a`,{href:`/project`,className:`\r
+                            `,children:`About`}),(0,j.jsx)(`a`,{href:`/projects`,className:`\r
                                 hover:text-violet-400\r
                                 transition-colors\r
                             `,children:`Projects`}),(0,j.jsx)(`a`,{href:`#`,className:`\r
