@@ -1,4 +1,5 @@
 import { ArrowUp } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
 
@@ -71,45 +72,39 @@ const Footer = () => {
                             text-gray-400
                         "
                     >
-                        <a
-                            href="/"
+                        <NavLink
+                            onClick={scrollToTop}
+                            to="/"
                             className="
                                 hover:text-violet-400
                                 transition-colors
                             "
                         >
                             Home
-                        </a>
+                        </NavLink>
 
-                        <a
-                            href="/about"
+                        <NavLink
+                            onClick={scrollToTop}
+                            to="/about"
                             className="
                                 hover:text-violet-400
                                 transition-colors
                             "
                         >
                             About
-                        </a>
+                        </NavLink>
 
-                        <a
-                            href="/projects"
+                        <NavLink
+                            onClick={scrollToTop}
+                            to="/projects"
                             className="
                                 hover:text-violet-400
                                 transition-colors
                             "
                         >
                             Projects
-                        </a>
+                        </NavLink>
 
-                        <a
-                            href="#"
-                            className="
-                                hover:text-violet-400
-                                transition-colors
-                            "
-                        >
-                            Contact
-                        </a>
                     </div>
                 </div>
 
