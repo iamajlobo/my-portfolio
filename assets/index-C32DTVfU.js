@@ -60,7 +60,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                                     hover:bg-violet-600/20\r
                                     hover:border-violet-500/40\r
                                     transition-all duration-300\r
-                                `,children:[(0,j.jsx)(`img`,{src:Zn,alt:`coin`,className:`w-5`}),(0,j.jsx)(`span`,{children:e})]},t))}),(0,j.jsxs)(`div`,{className:`grid grid-cols-3 gap-6 pt-4`,children:[(0,j.jsxs)(`div`,{className:`\r
+                                `,children:[(0,j.jsx)(`img`,{src:Zn,alt:`coin`,className:`w-5`}),(0,j.jsx)(`span`,{children:e})]},t))}),(0,j.jsxs)(`div`,{className:`grid grid-cols-3 gap-2 md:gap-6 pt-4`,children:[(0,j.jsxs)(`div`,{className:`\r
                             bg-white/5\r
                             rounded-2xl\r
                             p-5\r
