@@ -124,7 +124,7 @@ const About = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-6 pt-4">
+          <div className="grid grid-cols-3 gap-2 md:gap-6 pt-4">
             <div
               className="
                             bg-white/5
