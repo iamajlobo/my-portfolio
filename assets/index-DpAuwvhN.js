@@ -236,7 +236,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                             text-sm\r
                             font-medium\r
                             transition-all\r
-                        `,to:`#`,children:`Download CV`})]})]})},Sr=()=>(0,j.jsxs)(`footer`,{className:`bg-[#050816] border-t border-white/10 text-white`,children:[(0,j.jsxs)(`div`,{className:`\r
+                        `,to:`#`,children:`Download CV`})]})]})},Sr=()=>{let e=()=>{window.scrollTo({top:0,behavior:`smooth`})};return(0,j.jsxs)(`footer`,{className:`bg-[#050816] border-t border-white/10 text-white`,children:[(0,j.jsxs)(`div`,{className:`\r
                     max-w-7xl\r
                     mx-auto\r
                     px-6\r
@@ -262,19 +262,16 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                             flex-col\r
                             gap-4\r
                             text-gray-400\r
-                        `,children:[(0,j.jsx)(`a`,{href:`/`,className:`\r
+                        `,children:[(0,j.jsx)(Nn,{onClick:e,to:`/`,className:`\r
                                 hover:text-violet-400\r
                                 transition-colors\r
-                            `,children:`Home`}),(0,j.jsx)(`a`,{href:`/about`,className:`\r
+                            `,children:`Home`}),(0,j.jsx)(Nn,{onClick:e,to:`/about`,className:`\r
                                 hover:text-violet-400\r
                                 transition-colors\r
-                            `,children:`About`}),(0,j.jsx)(`a`,{href:`/projects`,className:`\r
+                            `,children:`About`}),(0,j.jsx)(Nn,{onClick:e,to:`/projects`,className:`\r
                                 hover:text-violet-400\r
                                 transition-colors\r
-                            `,children:`Projects`}),(0,j.jsx)(`a`,{href:`#`,className:`\r
-                                hover:text-violet-400\r
-                                transition-colors\r
-                            `,children:`Contact`})]})]}),(0,j.jsxs)(`div`,{children:[(0,j.jsx)(`h2`,{className:`\r
+                            `,children:`Projects`})]})]}),(0,j.jsxs)(`div`,{children:[(0,j.jsx)(`h2`,{className:`\r
                             text-xl\r
                             font-semibold\r
                             mb-5\r
@@ -283,7 +280,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                             flex-col\r
                             gap-4\r
                             text-gray-400\r
-                        `,children:[(0,j.jsx)(`p`,{children:`Based in the Philippines`}),(0,j.jsx)(`p`,{children:`Open for opportunities`})]}),(0,j.jsxs)(`button`,{onClick:()=>{window.scrollTo({top:0,behavior:`smooth`})},className:`\r
+                        `,children:[(0,j.jsx)(`p`,{children:`Based in the Philippines`}),(0,j.jsx)(`p`,{children:`Open for opportunities`})]}),(0,j.jsxs)(`button`,{onClick:e,className:`\r
                             mt-8\r
                             flex\r
                             items-center\r
@@ -305,7 +302,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                     text-center\r
                     text-gray-500\r
                     text-sm\r
-                `,children:`© 2026 AJ Portfolio. All rights reserved.`})]}),Cr=()=>(0,j.jsxs)(j.Fragment,{children:[(0,j.jsx)(xr,{}),(0,j.jsx)(Rt,{}),(0,j.jsx)(Sr,{})]}),wr=()=>(0,j.jsx)(`section`,{className:`min-h-screen bg-[#050816] text-white px-6 pt-30  pb-24`,children:(0,j.jsxs)(`div`,{className:`max-w-7xl mx-auto`,children:[(0,j.jsxs)(`div`,{className:`text-center`,children:[(0,j.jsx)(`p`,{className:`\r
+                `,children:`© 2026 AJ Portfolio. All rights reserved.`})]})},Cr=()=>(0,j.jsxs)(j.Fragment,{children:[(0,j.jsx)(xr,{}),(0,j.jsx)(Rt,{}),(0,j.jsx)(Sr,{})]}),wr=()=>(0,j.jsx)(`section`,{className:`min-h-screen bg-[#050816] text-white px-6 pt-30  pb-24`,children:(0,j.jsxs)(`div`,{className:`max-w-7xl mx-auto`,children:[(0,j.jsxs)(`div`,{className:`text-center`,children:[(0,j.jsx)(`p`,{className:`\r
       text-violet-400\r
       uppercase\r
       tracking-[0.3em]\r
