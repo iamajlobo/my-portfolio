@@ -134,7 +134,7 @@ const About = () => {
                             text-center
                         "
             >
-              <h2 className="text-3xl font-bold text-violet-400">5+</h2>
+              <h2 className="text-sm md:text-3xl font-bold text-violet-400">5+</h2>
               <p className="text-gray-400 text-sm">Projects</p>
             </div>
 
@@ -147,7 +147,7 @@ const About = () => {
                             text-center
                         "
             >
-              <h2 className="text-3xl font-bold text-violet-400">3+</h2>
+              <h2 className="text-sm md:text-3xl font-bold text-violet-400">3+</h2>
               <p className="text-gray-400 text-sm">Years Learning</p>
             </div>
 
@@ -160,7 +160,7 @@ const About = () => {
                             text-center
                         "
             >
-              <h2 className="text-3xl font-bold text-violet-400">100%</h2>
+              <h2 className="text-sm md:text-3xl font-bold text-violet-400">100%</h2>
               <p className="text-gray-400 text-sm">Passion</p>
             </div>
           </div>
