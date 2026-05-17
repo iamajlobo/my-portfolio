@@ -66,19 +66,19 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                             p-5\r
                             border border-white/10\r
                             text-center\r
-                        `,children:[(0,j.jsx)(`h2`,{className:`text-3xl font-bold text-violet-400`,children:`5+`}),(0,j.jsx)(`p`,{className:`text-gray-400 text-sm`,children:`Projects`})]}),(0,j.jsxs)(`div`,{className:`\r
+                        `,children:[(0,j.jsx)(`h2`,{className:`text-sm md:text-3xl font-bold text-violet-400`,children:`5+`}),(0,j.jsx)(`p`,{className:`text-gray-400 text-sm`,children:`Projects`})]}),(0,j.jsxs)(`div`,{className:`\r
                             bg-white/5\r
                             rounded-2xl\r
                             p-5\r
                             border border-white/10\r
                             text-center\r
-                        `,children:[(0,j.jsx)(`h2`,{className:`text-3xl font-bold text-violet-400`,children:`3+`}),(0,j.jsx)(`p`,{className:`text-gray-400 text-sm`,children:`Years Learning`})]}),(0,j.jsxs)(`div`,{className:`\r
+                        `,children:[(0,j.jsx)(`h2`,{className:`text-sm md:text-3xl font-bold text-violet-400`,children:`3+`}),(0,j.jsx)(`p`,{className:`text-gray-400 text-sm`,children:`Years Learning`})]}),(0,j.jsxs)(`div`,{className:`\r
                             bg-white/5\r
                             rounded-2xl\r
                             p-5\r
                             border border-white/10\r
                             text-center\r
-                        `,children:[(0,j.jsx)(`h2`,{className:`text-3xl font-bold text-violet-400`,children:`100%`}),(0,j.jsx)(`p`,{className:`text-gray-400 text-sm`,children:`Passion`})]})]})]})]})}),er=()=>{let e=()=>{window.scrollTo({top:0,behavior:`smooth`})};return(0,j.jsx)(`section`,{className:`min-h-screen hero-bg flex items-center justify-center px-6 py-12`,children:(0,j.jsxs)(`div`,{className:`text-center flex flex-col items-center gap-5 max-w-4xl`,children:[(0,j.jsx)(`div`,{className:`px-4 py-1 rounded-full border border-white/20 bg-white/10 backdrop-blur-sm`,children:(0,j.jsx)(`h3`,{className:`text-sm sm:text-base md:text-lg tracking-[0.3em] text-gray-300`,children:`PLAYER 1`})}),(0,j.jsx)(`h1`,{className:`\r
+                        `,children:[(0,j.jsx)(`h2`,{className:`text-sm md:text-3xl font-bold text-violet-400`,children:`100%`}),(0,j.jsx)(`p`,{className:`text-gray-400 text-sm`,children:`Passion`})]})]})]})]})}),er=()=>{let e=()=>{window.scrollTo({top:0,behavior:`smooth`})};return(0,j.jsx)(`section`,{className:`min-h-screen hero-bg flex items-center justify-center px-6 py-12`,children:(0,j.jsxs)(`div`,{className:`text-center flex flex-col items-center gap-5 max-w-4xl`,children:[(0,j.jsx)(`div`,{className:`px-4 py-1 rounded-full border border-white/20 bg-white/10 backdrop-blur-sm`,children:(0,j.jsx)(`h3`,{className:`text-sm sm:text-base md:text-lg tracking-[0.3em] text-gray-300`,children:`PLAYER 1`})}),(0,j.jsx)(`h1`,{className:`\r
                     text-5xl\r
                     sm:text-7xl\r
                     md:text-8xl\r
