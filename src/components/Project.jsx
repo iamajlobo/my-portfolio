@@ -37,6 +37,12 @@ const projects = [
 ];
 
 const Project = () => {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
     return (
         <section className="min-h-screen bg-[#050816] text-white px-6 py-24">
             <div className="max-w-7xl mx-auto">
@@ -205,7 +211,7 @@ const Project = () => {
 
                 {/* Bottom CTA */}
                 <div className="text-center mt-20">
-                    <NavLink to="/projects" className="
+                    <NavLink onClick={scrollToTop} to="/projects" className="
                         bg-violet-600
                         hover:bg-violet-500
                         px-10 py-4

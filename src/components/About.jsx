@@ -1,14 +1,7 @@
 import profile from "../assets/images/pixel-profile.png";
 import coin from "../assets/images/coin.png";
-import { NavLink } from "react-router-dom";
 
 const About = () => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
   return (
     <section className="min-h-screen bg-[#050816] text-white px-6 py-24">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
@@ -107,7 +100,7 @@ const About = () => {
               "React",
               "Tailwind",
               "JavaScript",
-              "Postgres",
+              "Postgresql",
               "MySQL",
               "Node.js",
             ].map((skill, index) => (
@@ -169,25 +162,6 @@ const About = () => {
             >
               <h2 className="text-3xl font-bold text-violet-400">100%</h2>
               <p className="text-gray-400 text-sm">Passion</p>
-            </div>
-            {/* CTA */}
-            <div className="pt-4 flex flex-wrap gap-4">
-              <NavLink
-                onClick={scrollToTop}
-                to="/about"
-                className="
-                            bg-violet-600
-                            hover:bg-violet-500
-                            px-8 py-3
-                            rounded-2xl
-                            font-semibold
-                            transition-all duration-300
-                            hover:scale-105
-                            hover:cursor-pointer
-                        "
-              >
-                Read more
-              </NavLink>
             </div>
           </div>
         </div>

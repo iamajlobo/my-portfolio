@@ -1,12 +1,12 @@
-import Hero from "../components/Hero";
 import About from "../components/About";
+import Hero from "../components/Hero";
 import Project from "../components/Project";
 
 
 
 const Home = () => {
   return (
-    <section className="">
+    <section>
       <Hero/>
       <About/>
       <Project/>

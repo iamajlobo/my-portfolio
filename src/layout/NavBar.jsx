@@ -22,7 +22,7 @@ const NavBar = () => {
     };
     
     return (
-        <header className="fixed top-0 left-0 w-full z-50">
+        <header className="fixed top-0 left-0 w-full z-50 px-5">
             <nav className="
                 max-w-7xl mx-auto
                 px-6 md:px-10

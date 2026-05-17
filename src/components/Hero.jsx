@@ -79,7 +79,7 @@ const Hero = () => {
                         transition-all duration-300
                         shadow-lg
                     ">
-                        Read More
+                        Who am I?
                     </NavLink>
 
                     <NavLink onClick={scrollToTop} to="/projects" className="
