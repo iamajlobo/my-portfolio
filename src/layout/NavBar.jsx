@@ -1,91 +1,148 @@
+import heart from "../assets/images/heart.png";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/images/logo.png";
-import menu from "../assets/icons/menu.svg";
-import close from "../assets/icons/close.svg";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
 
-  const linkClass = ({ isActive }) =>
-    isActive
-      ? "border-b-2 border-cyan-400 pb-3 md:pb-1 text-cyan-400"
-      : "hover:text-cyan-400 transition";
+    const [isOpen, setIsOpen] = useState(false);
 
-  return (
-    <section className="bg-main text-white shadow-xs shadow-cyan-400/30 sticky top-0 z-50">
-      <nav className="max-w-6xl mx-auto p-5 flex justify-between items-center ">
-        <h1>
-          <NavLink to="/">
-            <img className="w-10" src={logo} alt="logo" />
-          </NavLink>
-        </h1>
+    const linkClass = ({ isActive }) =>
+        `transition-all duration-300 hover:text-violet-400 ${
+            isActive
+                ? "text-violet-400 font-semibold"
+                : "text-white/80"
+        }`;
 
-        <div className="hidden font-medium md:flex gap-15">
-          <NavLink className={linkClass} to="/">
-            Home
-          </NavLink>
-          <NavLink className={linkClass} to="/about">
-            About
-          </NavLink>
-          <NavLink className={linkClass} to="/projects">
-            Projects
-          </NavLink>
-        </div>
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+    
+    return (
+        <header className="fixed top-0 left-0 w-full z-50">
+            <nav className="
+                max-w-7xl mx-auto
+                px-6 md:px-10
+                py-4
+                flex items-center justify-between
+                backdrop-blur-md
+                bg-black/20
+                border border-white/10
+                rounded-2xl
+                mt-4
+            ">
+                
+                {/* Logo / Hearts */}
+                <div className="flex items-center gap-1">
+                    <img className="w-7 md:w-8 animate-pulse" src={heart} alt="Heart" />
+                    <img className="w-7 md:w-8 animate-pulse delay-100" src={heart} alt="Heart" />
+                    <img className="w-7 md:w-8 animate-pulse delay-200" src={heart} alt="Heart" />
+                </div>
 
-        <NavLink
-          to="/resume"
-          className="hidden md:block bg-cyan-400 px-4 py-2 rounded hover:opacity-80 transition"
-        >
-          Download CV
-        </NavLink>
-        <img
-          className="inline-block md:hidden w-10"
-          onClick={() => setIsOpen(true)}
-          src={menu}
-          alt="Menu Icon"
-        />
-      </nav>
+                {/* Desktop Links */}
+                <div className="hidden md:flex items-center gap-12 text-lg">
+                    <NavLink onClick={scrollToTop} className={linkClass} to="/">
+                        Home
+                    </NavLink>
 
-      <div
-        className={`
-    fixed top-0 right-0
-    w-80 h-screen
-    bg-main
-    py-20 px-10
-    font-medium text-center
-    border-l border-gray-200/30
-    flex flex-col gap-5
+                    <NavLink onClick={scrollToTop} className={linkClass} to="/about">
+                        About
+                    </NavLink>
 
-    transition-all duration-300 ease-in-out
+                    <NavLink onClick={scrollToTop} className={linkClass} to="/projects">
+                        Projects
+                    </NavLink>
+                </div>
 
-    ${isOpen ? "translate-x-0" : "translate-x-full"}
-  `}
-      >
-        <NavLink className={linkClass} to="/">
-          Home
-        </NavLink>
-        <NavLink className={linkClass} to="/about">
-          About
-        </NavLink>
-        <NavLink className={linkClass} to="/projects">
-          Projects
-        </NavLink>
-        <NavLink
-          to="/resume"
-          className="inline-block md:hidden text-sm bg-cyan-400 px-4 py-2 rounded hover:opacity-80 transition"
-        >
-          Download CV
-        </NavLink>
-        <img
-          className="w-5 absolute top-4 left-5 opacity-50"
-          onClick={() => setIsOpen(false)}
-          src={close}
-          alt="Close Icon"
-        />
-      </div>
-    </section>
-  );
+                {/* Desktop Button */}
+                <div className="hidden md:block">
+                    <NavLink
+                        className="
+                            bg-violet-600
+                            hover:bg-violet-500
+                            text-white
+                            px-5 py-2.5
+                            rounded-xl
+                            text-sm
+                            font-medium
+                            transition-all duration-300
+                            shadow-lg shadow-violet-900/30
+                            hover:scale-105
+                        "
+                        to="#"
+                    >
+                        Download CV
+                    </NavLink>
+                </div>
+
+                {/* Mobile Menu Button */}
+                <button
+                    onClick={() => setIsOpen(!isOpen)}
+                    className="md:hidden text-white"
+                >
+                    {isOpen ? <X size={28} /> : <Menu size={28} />}
+                </button>
+            </nav>
+
+            {/* Mobile Menu */}
+            {isOpen && (
+                <div className="
+                    md:hidden
+                    mx-6 mt-2
+                    rounded-2xl
+                    bg-black/80
+                    backdrop-blur-xl
+                    border border-white/10
+                    p-6
+                    flex flex-col gap-6
+                    text-center
+                ">
+                    <NavLink
+                        onClick={() => setIsOpen(false)}
+                        className={linkClass}
+                        to="/"
+                    >
+                        Home
+                    </NavLink>
+
+                    <NavLink
+                        onClick={() => setIsOpen(false)}
+                        className={linkClass}
+                        to="/about"
+                    >
+                        About
+                    </NavLink>
+
+                    <NavLink
+                        onClick={() => setIsOpen(false)}
+                        className={linkClass}
+                        to="/project"
+                    >
+                        Projects
+                    </NavLink>
+
+                    <NavLink
+                        className="
+                            bg-violet-600
+                            hover:bg-violet-500
+                            text-white
+                            py-3
+                            rounded-xl
+                            text-sm
+                            font-medium
+                            transition-all
+                        "
+                        to="#"
+                    >
+                        Download CV
+                    </NavLink>
+                </div>
+            )}
+        </header>
+    );
 };
 
 export default NavBar;

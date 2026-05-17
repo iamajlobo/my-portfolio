@@ -1,11 +1,11 @@
 
 
-const About = () => {
+const AboutPage = () => {
     return (
         <section>
-            
+
         </section>
     );
 }
 
-export default About;
+export default AboutPage;

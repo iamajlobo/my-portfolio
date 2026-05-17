@@ -1,22 +1,11 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
-:root {
-  /* === BASE === */
-  --color-bg-main: #0a0c10;        /* Deep navy (main background) */
-  --color-bg-secondary: #111827;   /* Section background */
-  --color-surface: #1F2937;        /* Cards / containers */
-
-  /* === BRAND / ACCENT === */
-  --color-accent: #22D3EE;         /* Cyan (main brand) */
-  --color-accent-hover: #06B6D4;   /* Hover state */
-  --color-accent-glow: rgba(34, 211, 238, 0.35);
+* {
+    color: whitesmoke;
 }
 
-.bg-main {
-  background-color: var(--color-bg-main);
+.hero-bg {
+    background-image: url(./assets/images/bg.png);
+    background-position: center;
+    background-size: cover;
 }
-
-.bg-hero {
-  background-image: url(./assets/images/hero-bg.png);
-}
-

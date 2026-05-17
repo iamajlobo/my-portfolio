@@ -1,29 +1,183 @@
-
-import logo from "../assets/images/logo.png";
-import github from "../assets/icons/github.svg"
-import linkedIn from "../assets/icons/linkedln.svg";
-import gmail from "../assets/icons/gmail.svg";
+import { ArrowUp } from "lucide-react";
 
 const Footer = () => {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+
     return (
-        <footer className="bg-main text-white">
-            <div className="max-w-6xl mx-auto p-5 flex justify-center md:justify-between items-center">
-                <img className="hidden md:block w-10" src={logo} alt="logo" />
-                <h2>All rights reserved. | 2026</h2>
-                <div className="hidden md:flex gap-5">
-                    <a href="">
-                        <img className="w-10" src={github} alt="logo" />
-                    </a>
-                    <a href="">
-                        <img className="w-10" src={linkedIn} alt="logo" />
-                    </a>
-                    <a href="">
-                        <img className="w-10" src={gmail} alt="logo" />
-                    </a>
+        <footer className="bg-[#050816] border-t border-white/10 text-white">
+
+            {/* Main Footer */}
+            <div
+                className="
+                    max-w-7xl
+                    mx-auto
+                    px-6
+                    py-16
+                    grid
+                    md:grid-cols-3
+                    gap-12
+                "
+            >
+
+                {/* Left */}
+                <div className="space-y-5">
+                    <h1
+                        className="
+                            text-4xl
+                            font-extrabold
+                            text-violet-500
+                            tracking-tight
+                        "
+                    >
+                        AJ
+                    </h1>
+
+                    <p
+                        className="
+                            text-gray-400
+                            leading-relaxed
+                            max-w-sm
+                        "
+                    >
+                        Crafting modern and interactive digital
+                        experiences with clean code, creative
+                        design, and immersive user interfaces.
+                    </p>
                 </div>
+
+                {/* Middle */}
+                <div>
+                    <h2
+                        className="
+                            text-xl
+                            font-semibold
+                            mb-5
+                        "
+                    >
+                        Navigation
+                    </h2>
+
+                    <div
+                        className="
+                            flex
+                            flex-col
+                            gap-4
+                            text-gray-400
+                        "
+                    >
+                        <a
+                            href="/"
+                            className="
+                                hover:text-violet-400
+                                transition-colors
+                            "
+                        >
+                            Home
+                        </a>
+
+                        <a
+                            href="/about"
+                            className="
+                                hover:text-violet-400
+                                transition-colors
+                            "
+                        >
+                            About
+                        </a>
+
+                        <a
+                            href="/project"
+                            className="
+                                hover:text-violet-400
+                                transition-colors
+                            "
+                        >
+                            Projects
+                        </a>
+
+                        <a
+                            href="#"
+                            className="
+                                hover:text-violet-400
+                                transition-colors
+                            "
+                        >
+                            Contact
+                        </a>
+                    </div>
+                </div>
+
+                {/* Right */}
+                <div>
+                    <h2
+                        className="
+                            text-xl
+                            font-semibold
+                            mb-5
+                        "
+                    >
+                        Info
+                    </h2>
+
+                    <div
+                        className="
+                            flex
+                            flex-col
+                            gap-4
+                            text-gray-400
+                        "
+                    >
+                        <p>Based in the Philippines</p>
+                        <p>Open for opportunities</p>
+                    </div>
+
+                    {/* Back to Top */}
+                    <button
+                        onClick={scrollToTop}
+                        className="
+                            mt-8
+                            flex
+                            items-center
+                            gap-2
+                            bg-violet-600
+                            hover:bg-violet-500
+                            px-5
+                            py-3
+                            rounded-2xl
+                            transition-all
+                            duration-300
+                            hover:scale-105
+                            shadow-lg
+                            shadow-violet-900/30
+                        "
+                    >
+                        <ArrowUp size={18} />
+                        Back to Top
+                    </button>
+                </div>
+            </div>
+
+            {/* Bottom */}
+            <div
+                className="
+                    border-t
+                    border-white/10
+                    py-6
+                    text-center
+                    text-gray-500
+                    text-sm
+                "
+            >
+                © 2026 AJ Portfolio. All rights reserved.
             </div>
         </footer>
     );
-}
+};
 
 export default Footer;
