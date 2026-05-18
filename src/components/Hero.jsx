@@ -22,9 +22,9 @@ const Hero = () => {
                 {/* Main Heading */}
                 <h1 className="
                     text-5xl
-                    sm:text-7xl
-                    md:text-8xl
-                    lg:text-9xl
+                    sm:text-6xl
+                    md:text-7xl
+                    lg:text-8xl
                     font-extrabold
                     uppercase
                     tracking-tight
@@ -32,7 +32,7 @@ const Hero = () => {
                     text-white
                     drop-shadow-[0_5px_25px_rgba(0,0,0,0.6)]
                 ">
-                    DEVELOPER
+                    ALEXANDER
                 </h1>
 
                 {/* Subtitle */}
