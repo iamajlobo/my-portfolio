@@ -1,5 +1,6 @@
 import profile from "../assets/images/pixel-profile.png";
 import coin from "../assets/images/coin.png";
+import { projects } from "../utils/fetchProjects";
 
 const About = () => {
   return (
@@ -134,8 +135,8 @@ const About = () => {
                             text-center
                         "
             >
-              <h2 className="text-sm md:text-3xl font-bold text-violet-400">5+</h2>
-              <p className="text-gray-400 text-sm">Projects</p>
+              <h2 className="text-sm md:text-3xl font-bold text-violet-400">{projects.length}+</h2>
+              <p className="text-gray-400 text-sm">Personal Projects</p>
             </div>
 
             <div
@@ -147,7 +148,7 @@ const About = () => {
                             text-center
                         "
             >
-              <h2 className="text-sm md:text-3xl font-bold text-violet-400">3+</h2>
+              <h2 className="text-sm md:text-3xl font-bold text-violet-400">{(new Date().getFullYear()) - 2023}+</h2>
               <p className="text-gray-400 text-sm">Years Learning</p>
             </div>
 
