@@ -1,66 +1,7 @@
-import project1 from "../assets/images/sample.png";
-import project2 from "../assets/images/sample.png";
-import project3 from "../assets/images/sample.png";
-
 import coin from "../assets/images/coin.png";
 import { ExternalLink, Code2 } from "lucide-react";
+import { projects } from "../utils/fetchProjects";
 
-const projects = [
-  {
-    title: "E-Learning Dashboard",
-    description:
-      "Interactive Power BI dashboard for analyzing student engagement, course performance, and learning trends.",
-    image: project1,
-    tech: ["Power BI", "DAX", "SQL"],
-    github: "#",
-    live: "#",
-  },
-  {
-    title: "Developer Portfolio",
-    description:
-      "Modern gaming-inspired portfolio website with responsive UI, animations, and interactive sections.",
-    image: project2,
-    tech: ["React", "Tailwind", "Framer Motion"],
-    github: "#",
-    live: "#",
-  },
-  {
-    title: "Task Management App",
-    description:
-      "A productivity application with task tracking, authentication, and real-time updates.",
-    image: project3,
-    tech: ["React", "Firebase", "Tailwind"],
-    github: "#",
-    live: "#",
-  },
-    {
-    title: "E-Learning Dashboard",
-    description:
-      "Interactive Power BI dashboard for analyzing student engagement, course performance, and learning trends.",
-    image: project1,
-    tech: ["Power BI", "DAX", "SQL"],
-    github: "#",
-    live: "#",
-  },
-  {
-    title: "Developer Portfolio",
-    description:
-      "Modern gaming-inspired portfolio website with responsive UI, animations, and interactive sections.",
-    image: project2,
-    tech: ["React", "Tailwind", "Framer Motion"],
-    github: "#",
-    live: "#",
-  },
-  {
-    title: "Task Management App",
-    description:
-      "A productivity application with task tracking, authentication, and real-time updates.",
-    image: project3,
-    tech: ["React", "Firebase", "Tailwind"],
-    github: "#",
-    live: "#",
-  },
-];
 
 const AllProjects = () => {
   return (
@@ -132,7 +73,7 @@ const AllProjects = () => {
                   className="
                                         w-full
                                         h-60
-                                        object-cover
+                                        object-fit
                                         group-hover:scale-110
                                         transition-transform duration-700
                                     "
