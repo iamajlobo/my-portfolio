@@ -148,7 +148,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                             `,children:[(0,j.jsx)(`div`,{className:`overflow-hidden`,children:(0,j.jsx)(`img`,{src:e.image,alt:e.title,className:`\r
                                         w-full\r
                                         h-60\r
-                                        object-cover\r
+                                        object-fit\r
                                         group-hover:scale-110\r
                                         transition-transform duration-700\r
                                     `})}),(0,j.jsxs)(`div`,{className:`p-6 space-y-5`,children:[(0,j.jsxs)(`div`,{children:[(0,j.jsx)(`h2`,{className:`\r
