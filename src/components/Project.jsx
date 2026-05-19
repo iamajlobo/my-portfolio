@@ -79,7 +79,7 @@ const Project = () => {
                                     className="
                                         w-full
                                         h-60
-                                        object-cover
+                                        object-fit
                                         group-hover:scale-110
                                         transition-transform duration-700
                                     "
