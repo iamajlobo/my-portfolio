@@ -54,7 +54,7 @@ const Project = () => {
                 {/* Projects Grid */}
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10">
 
-                    {projects.map((project, index) => (
+                    {projects.slice(0,3).map((project, index) => (
                         <div
                             key={index}
                             className="
