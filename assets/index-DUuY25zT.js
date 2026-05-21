@@ -134,7 +134,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                         mx-auto\r
                         mt-6\r
                         text-lg\r
-                    `,children:`Here are some of the projects I’ve built, combining modern design, functionality, and user experience.`})]}),(0,j.jsx)(`div`,{className:`grid lg:grid-cols-3 md:grid-cols-2 gap-10`,children:Qn.map((e,t)=>(0,j.jsxs)(`div`,{className:`\r
+                    `,children:`Here are some of the projects I’ve built, combining modern design, functionality, and user experience.`})]}),(0,j.jsx)(`div`,{className:`grid lg:grid-cols-3 md:grid-cols-2 gap-10`,children:Qn.slice(0,3).map((e,t)=>(0,j.jsxs)(`div`,{className:`\r
                                 group\r
                                 bg-white/5\r
                                 border border-white/10\r
