@@ -1,11 +1,22 @@
 import project1 from "../assets/projects/portfolio.png";
 import project2 from "../assets/projects/lobogames.png"
 import project3 from "../assets/projects/lobomovies.png"
+import project4 from "../assets/projects/lobodex.png";
 
 
 export const projects = [
     {
-        id: 1,
+        id: 4,
+        title: "Lobodex",
+        description:
+  "A Pokédex-inspired web app that allows users to explore Pokémon data, including stats, types, and evolution chains, with a responsive and interactive interface.",
+        image: project4,
+        tech: ["React", "Tailwind"],
+        github: "https://github.com/iamajlobo/lobodex",
+        live: "https://iamajlobo.github.io/lobodex/"
+    },
+    {
+        id: 3,
         title: "My Portfolio",
         description:
             "A personal portfolio website showcasing projects, skills, and experience with a responsive and modern UI.",
@@ -25,7 +36,7 @@ export const projects = [
         live: "https://iamajlobo.github.io/mini-projects/"
     },
     {
-        id: 3,
+        id: 1,
         title: "Lobo Movies",
         description:
             "A movie browsing app that allows users to explore films, view details, and manage favorites using a dynamic React interface.",
